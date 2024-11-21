@@ -1,0 +1,38 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.genreList {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.genreButton {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.genreButton:hover {
+    background-color: #666;
+}
+
+.genreButton.active {
+    background-color: #999;
+    font-weight: bold;
+}

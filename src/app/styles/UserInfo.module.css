@@ -1,0 +1,17 @@
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.username {
+    color: #fff;
+    font-size: 16px;
+}

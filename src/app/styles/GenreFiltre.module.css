@@ -1,0 +1,16 @@
+.genreFiltre{
+    display: flex;
+    gap: 15px;
+    marginBottom: 20px
+}
+
+.all{
+    padding: 10px;
+    color: black;
+
+}
+.geners{
+    padding: 10px;
+    color: #fff;
+    border: none;
+}
