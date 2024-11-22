@@ -1,16 +1,21 @@
 .genreFiltre{
     display: flex;
-    gap: 15px;
-    marginBottom: 20px
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 20px
 }
 
 .all{
+    width: 100px;
+    height: 45px;
+    background-color: cornflowerblue;
     padding: 10px;
     color: black;
+    border-radius: 10px;
 
 }
-.geners{
-    padding: 10px;
-    color: #fff;
-    border: none;
+
+.all:hover{
+    background-color: yellow;
 }

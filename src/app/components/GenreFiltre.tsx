@@ -23,7 +23,7 @@ export default function GenreFilter({
                 All
             </button>
             {genres.map((genre) => (
-                <button className={styles.genres}
+                <button className={styles.all}
                     key={genre.id}
                     onClick={() => handleGenreSelect(genre.id)}>
                     {genre.name}
