@@ -1,20 +1,19 @@
-import styles from '@/app/styles/MoviesList.module.css';
 import MoviesListCard from './MoviesListCard';
-import { Movie } from '../types/movie';
-import {FC} from "react";
+import { Movie, Genre } from "@/app/types/movie";
+import styles from '@/app/styles/MoviesList.module.css';
 
-interface MoviesListProps {
+export default function MoviesList({
+                                       movies,
+                                       genres,
+                                   }: {
     movies: Movie[];
-}
-
-const MoviesList: FC<MoviesListProps> = ({ movies }) => {
+    genres: Genre[];
+}) {
     return (
         <div className={styles.moviesList}>
             {movies.map((movie) => (
-                <MoviesListCard key={movie.id} movie={movie} />
+                <MoviesListCard key={movie.id} movie={movie} genres={genres} />
             ))}
         </div>
     );
-};
-
-export default MoviesList;
+}

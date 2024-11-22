@@ -1,9 +1,7 @@
-
 import MoviesList from '../components/MoviesList';
 import SearchBar from '../components/SearchBar';
-
 import Pagination from '../components/Pagination';
-import {getGenres, getMovies} from "@/app/utils/api";
+import { getGenres, getMovies } from "@/app/utils/api";
 import GenreFilter from "@/app/components/GenreFiltre";
 
 export default async function MoviesPage({
@@ -11,12 +9,12 @@ export default async function MoviesPage({
                                          }: {
     searchParams: { [key: string]: string | undefined };
 }) {
-    // Витягуємо параметри з Урли
+    // Извлечение параметров из URL
     const page = searchParams.page ? parseInt(searchParams.page, 10) : 1;
     const genre = searchParams.genre ? parseInt(searchParams.genre, 10) : null;
     const query = searchParams.query || '';
 
-    // Отримуємо дані з серверу
+    // Получение данных с сервера
     const moviesData = await getMovies(page, genre, query);
     const genresData = await getGenres();
 
@@ -27,11 +25,11 @@ export default async function MoviesPage({
             {/* Пошук */}
             <SearchBar initialQuery={query} />
 
-            {/* Фільтр за жанрами */}
-            <GenreFilter genres={genresData.genres}  />
+            {/* Фільтр по жанрах */}
+            <GenreFilter genres={genresData.genres} />
 
             {/* Список фільмів */}
-            <MoviesList movies={moviesData.results} />
+            <MoviesList movies={moviesData.results} genres={genresData.genres} />
 
             {/* Пагінація */}
             <Pagination currentPage={page} totalPages={moviesData.total_pages} />
