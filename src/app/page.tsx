@@ -1,6 +1,6 @@
 import MoviesPage from './containers/MoviesPage';
 
-export default async function Page({
+export default async function Home({
                                      searchParams,
                                    }: {
   searchParams: { [key: string]: string | undefined };

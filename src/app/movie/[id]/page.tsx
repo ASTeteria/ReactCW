@@ -1,6 +1,6 @@
 import MovieInfo from '@/app/components/MovieInfo';
-import { getMovieById } from "@/app/utils/api";
-import styles from '@/app/styles/MoviePage.module.css';  // Импорт стилей
+import { getMovieById } from "@/app/services/api.service";
+import styles from '@/app/styles/MoviesPage.module.css';  // Импорт стилей
 
 export default async function MoviePage({ params }: { params: { id: string } }) {
     const movie = await getMovieById(params.id);

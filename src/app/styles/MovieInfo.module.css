@@ -9,32 +9,32 @@
 }
 
 .title {
-    font-size: 2em;
+    font-size: 32px;
     font-weight: bold;
 }
 
 .originalTitle,
 .releaseDate {
-    font-size: 1.2em;
+    font-size: 16px;
     margin-top: 10px;
 }
 
 .overview {
     margin-top: 20px;
-    font-size: 1.1em;
-    color: #555;
+    font-size: 18px;
+    color: dimgrey;
 }
 
 .rating {
     margin-top: 20px;
-    font-size: 1.1em;
+    font-size: 18px;
 }
 
 
 
 .detailsGrid {
     margin-top: 20px;
-    font-size: 1.1em;
+    font-size: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -44,7 +44,6 @@
     display: flex;
     gap: 10px;
     height: 40px;
-    background-color: lawngreen;
     color: white;
     padding: 3px 10px;
     font-size: 12px;

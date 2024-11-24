@@ -1,5 +1,5 @@
 'use client';
-import styles from '@/app/styles/SearchBar.module.css';
+import styles from '@/app/styles/Search.module.css';
 import {FormEvent, useState} from 'react';
 import { useRouter } from 'next/navigation';
 

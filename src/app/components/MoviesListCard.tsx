@@ -1,6 +1,6 @@
 import PosterPreview from './PosterPreview';
 import Link from 'next/link';
-import { Movie, Genre } from "@/app/types/movie";
+import { Movie, Genre } from "@/app/models/movie";
 import styles from '@/app/styles/MoviesListCard.module.css';
 import { StarsRating } from "@/app/components/StarsRating";
 import GenreBadge from '@/app/components/GenreBadge';

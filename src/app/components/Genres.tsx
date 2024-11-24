@@ -1,7 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import {Genre} from "@/app/types/movie";
-import styles from '@/app/styles/GenreFiltre.module.css';
+import {Genre} from "@/app/models/movie";
+import styles from '@/app/styles/Genres.module.css';
 
 export default function GenreFilter({
                                         genres,

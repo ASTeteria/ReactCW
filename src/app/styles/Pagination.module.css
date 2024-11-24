@@ -7,8 +7,8 @@
 }
 
 .pageButton {
-    background-color: #555;
-    color: #fff;
+    background-color: dimgrey;
+    color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -16,11 +16,11 @@
 }
 
 .pageButton:hover {
-    background-color: #777;
+    background-color: grey;
 }
 
 .pageButton:disabled {
-    background-color: #333;
+    background-color: darkslategray;
     cursor: not-allowed;
 }
 .page { font-weight: bold; }

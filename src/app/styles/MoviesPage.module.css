@@ -1,38 +1,7 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #fff;
-}
-
-.title {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.genreList {
+.pageContainer {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.genreButton {
-    background-color: #444;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.genreButton:hover {
-    background-color: #666;
-}
-
-.genreButton.active {
-    background-color: #999;
-    font-weight: bold;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: white;
 }

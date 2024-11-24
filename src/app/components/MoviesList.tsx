@@ -1,5 +1,5 @@
 import MoviesListCard from './MoviesListCard';
-import { Movie, Genre } from "@/app/types/movie";
+import { Movie, Genre } from "@/app/models/movie";
 import styles from '@/app/styles/MoviesList.module.css';
 
 export default function MoviesList({

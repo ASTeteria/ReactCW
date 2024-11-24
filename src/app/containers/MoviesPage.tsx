@@ -1,8 +1,9 @@
 import MoviesList from '../components/MoviesList';
-import SearchBar from '../components/SearchBar';
+import SearchBar from '../components/Search';
 import Pagination from '../components/Pagination';
-import { getGenres, getMovies } from "@/app/utils/api";
-import GenreFilter from "@/app/components/GenreFiltre";
+import { getGenres, getMovies } from "@/app/services/api.service";
+import GenreFilter from "@/app/components/Genres";
+
 
 export default async function MoviesPage({
                                              searchParams,
@@ -14,13 +15,14 @@ export default async function MoviesPage({
     const genre = searchParams.genre ? parseInt(searchParams.genre, 10) : null;
     const query = searchParams.query || '';
 
-    // Получение данных с сервера
+    // отримання даних
     const moviesData = await getMovies(page, genre, query);
     const genresData = await getGenres();
 
     return (
         <div style={{ padding: '20px' }}>
             <h1>Movies</h1>
+
 
             {/* Пошук */}
             <SearchBar initialQuery={query} />

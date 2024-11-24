@@ -39,8 +39,8 @@ export default function MovieInfo({
                     <p><strong>Rating:</strong> {rating}</p>
                 </div>
             <div className={styles.detailsGrid}>
-                                   <p>Original Language: {original_language}</p>
-                                  <p>Popularity: {popularity}</p>
+                    <p>Original Language: {original_language}</p>
+                    <p>Popularity: {popularity}</p>
 
             </div>
                     <div className={styles.genres}>
